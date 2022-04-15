@@ -1,0 +1,10 @@
+
+<div uni-panel="{type:'modal', size:'md', level:'info'}">
+    <header i18n="info,pedido">
+        Detalle del pedido
+    </header>
+    <div replace="{_pedidoItem: 'data.current'}" uni-part="part.info"></div>
+    <footer>
+        <a ng-click="action.cancel('info')" uni-badge="">Cancelar</a>
+    </footer>
+</div>

@@ -1,8 +1,10 @@
 
 package com.propuesta.spm.manager.rest;
 
+import bo.union.lang.ServiceException;
 import com.propuesta.spm.manager.ProductoServ;
 import com.propuesta.spm.manager.data.Producto;
+import com.propuesta.spm.manager.filter.ProductoFtr;
 import java.util.List;
 import javax.ejb.EJB;
 import javax.ws.rs.*;
@@ -26,9 +28,9 @@ public class ProductoRest {
     }
 
     @POST
-    @Path("listar")
-    public List<Producto> listarProducto() {
-        return serv.listarProducto();
+    @Path("filter")
+    public List<Producto> listarProducto(ProductoFtr filter) throws ServiceException{
+        return serv.listarProducto(filter);
     }
 
     @POST

@@ -11,4 +11,12 @@
     <version>1.0.0</version>
     <name>propuesta-spm-tools</name>
     <description>Herramientas de propuesta</description>
+    <dependencies>
+        <dependency>
+            <groupId>com.propuesta.spm</groupId>
+            <artifactId>spm-manager-serv</artifactId>
+            <version>${propuesta-spm-manager-serv.version}</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
 </project>

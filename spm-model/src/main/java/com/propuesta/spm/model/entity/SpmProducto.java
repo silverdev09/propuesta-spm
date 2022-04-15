@@ -2,6 +2,8 @@
 package com.propuesta.spm.model.entity;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 import javax.persistence.Basic;
 import javax.persistence.Cacheable;
 import javax.persistence.Column;
@@ -9,11 +11,12 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 /**
- * @author spm
+ * @author sipaco
  */
 @Entity
 @Table(name = "SPM_PRODUCTO")
@@ -28,6 +31,8 @@ public class SpmProducto implements Serializable {
     @Basic
     @Column(name = "NOMBRE")
     private String nombre;
+    @ManyToMany(mappedBy = "listProducto")
+    private List<SpmPedido> listPedido;
 
     public Long getIdProducto() {
         return idProducto;
@@ -43,6 +48,25 @@ public class SpmProducto implements Serializable {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public List<SpmPedido> getListPedido() {
+        if (listPedido == null) {
+            listPedido = new ArrayList<>();
+        }
+        return listPedido;
+    }
+
+    public void setListPedido(List<SpmPedido> listPedido) {
+        this.listPedido = listPedido;
+    }
+
+    public void addListPedido(SpmPedido listPedido) {
+        getListPedido().add(listPedido);
+    }
+
+    public void removeListPedido(SpmPedido listPedido) {
+        getListPedido().remove(listPedido);
     }
 
 }

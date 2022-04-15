@@ -4,4 +4,23 @@
     <span>{{_pedidoItem.fecha|date:'dd/MM/yyyy'}}</span>  <br>
     <label i18n="description">Descripci&oacute;n</label>
     <span>{{_pedidoItem.descripcion}}</span>
-</div>
+</div><br>
+<fieldset uni-panel="{level:'info'}">
+    <legend>
+        Productos
+    </legend>
+    <table uni-table="">
+        <thead>
+            <tr>
+                <th width="10%">Id Producto</th>
+                <th width="">Producto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="row in _pedidoItem.listProducto">
+                <td>{{row.idProducto}}</td>
+                <td>{{row.idProducto|param:data.listProducto}}</td>
+            </tr>
+        </tbody>
+    </table>
+</fieldset>

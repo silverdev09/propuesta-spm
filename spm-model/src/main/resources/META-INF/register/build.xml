@@ -4,7 +4,7 @@
     <source>http://scm.internal.union:8080/scm/git/baking-reporting</source>
     <hash>3d4bcf87f1da029d7191b97068f1bd621c0fd865</hash>
     <user>sipaco</user>
-    <time>2022-04-14 21:29:53.526</time>
+    <time>2022-04-15 17:00:20.329</time>
     <name>spm-model-1.0.0</name>
     <message>Basic information from info.json</message>
 </build>

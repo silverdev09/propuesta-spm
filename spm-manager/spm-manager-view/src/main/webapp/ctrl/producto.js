@@ -1,17 +1,19 @@
 
+
 __app.controller("spm$producto", function ($scope, $http) {
     const PATH = "manager/spm";
     $scope.view = new ViewHandler(PATH, 'producto', ['inbox','crear', 'editar', 'borrar']);
-    $scope.part = new PartHandler(PATH, 'producto');
+    $scope.part = new PartHandler(PATH, 'producto', ['deta']);
     var productoServ = new ServHandler(PATH, 'producto', ['listar', 'crear', 'editar', 'borrar']);
     var productoPanel = $scope.panel = new PanelHandler();
     var productoData = $scope.data = {
+        filter: {},
         list: [],
         current: undefined
     };
     var productoFilter = $scope.filter = {
         apply: function () {
-            var call = $http.post(productoServ.listar, {});
+            var call = $http.post(productoServ.filter, productoData.filter);
             call.success(function (data) {
                 productoData.list = data;
             });

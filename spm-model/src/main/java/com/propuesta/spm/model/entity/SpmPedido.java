@@ -21,7 +21,7 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 /**
- * @author spm
+ * @author sipaco
  */
 @Entity
 @Table(name = "SPM_PEDIDO")
@@ -42,7 +42,7 @@ public class SpmPedido implements Serializable {
     private String descripcion;
     @ManyToMany
     @JoinTable(name = "SPM_ORDEN", joinColumns = @JoinColumn(name = "ID_PEDIDO"), inverseJoinColumns = @JoinColumn(name = "ID_PRODUCTO"))
-    private List<SpmProducto> spmProductos;
+    private List<SpmProducto> listProducto;
 
     public Long getIdPedido() {
         return idPedido;
@@ -68,23 +68,25 @@ public class SpmPedido implements Serializable {
         this.descripcion = descripcion;
     }
 
-    public List<SpmProducto> getSpmProductos() {
-        if (spmProductos == null) {
-            spmProductos = new ArrayList<>();
+    public List<SpmProducto> getListProducto() {
+        if (listProducto == null) {
+            listProducto = new ArrayList<>();
         }
-        return spmProductos;
+        return listProducto;
     }
 
-    public void setSpmProductos(List<SpmProducto> spmProductos) {
-        this.spmProductos = spmProductos;
+    public void setListProducto(List<SpmProducto> listProducto) {
+        this.listProducto = listProducto;
     }
 
-    public void addSpmProducto(SpmProducto spmProducto) {
-        getSpmProductos().add(spmProducto);
+    public void addListProducto(SpmProducto listProducto) {
+        getListProducto().add(listProducto);
+        listProducto.getListPedido().add(this);
     }
 
-    public void removeSpmProducto(SpmProducto spmProducto) {
-        getSpmProductos().remove(spmProducto);
+    public void removeListProducto(SpmProducto listProducto) {
+        getListProducto().remove(listProducto);
+        listProducto.getListPedido().remove(this);
     }
 
 }

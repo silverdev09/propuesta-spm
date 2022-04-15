@@ -1,16 +1,21 @@
 
 
 <div ng-controller="spm$pedido">
-    <div ng-include="view.inbox">
-        Cargando Inbox
-    </div>
-    <div ng-if="panel.if('crear')" ng-include="view.crear">
-        Cargando Crear
-    </div>
-    <div ng-if="panel.if('editar')" ng-include="view.editar">
-        Cargando Actualizar
-    </div>
-    <div ng-if="panel.if('borrar')" ng-include="view.borrar">
-        Cargando Eliminar
+    <div ng-init="action.listProduct()">
+        <div ng-include="view.inbox">
+            Cargando Inbox
+        </div>
+        <div ng-if="panel.if('crear')" ng-include="view.crear">
+            Cargando Crear
+        </div>
+        <div ng-if="panel.if('editar')" ng-include="view.editar">
+            Cargando Actualizar
+        </div>
+        <div ng-if="panel.if('borrar')" ng-include="view.borrar">
+            Cargando Eliminar
+        </div>
+        <div ng-if="panel.if('info')" ng-include="view.info">
+            Cargando detalles
+        </div>
     </div>
 </div>

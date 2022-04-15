@@ -38,4 +38,12 @@
     <propuesta-spm-manager-impl.version>1.0.0.0</propuesta-spm-manager-impl.version>
     <ignore.bo.union.maven.compile.LogoMojo>true</ignore.bo.union.maven.compile.LogoMojo>
   </properties>
+  <dependencies>
+    <dependency>
+      <groupId>com.propuesta.spm</groupId>
+      <artifactId>spm-manager-serv</artifactId>
+      <version>${propuesta-spm-manager-serv.version}</version>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
 </project>

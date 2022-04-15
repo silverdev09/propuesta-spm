@@ -2,7 +2,7 @@
   "groupId" : "com.propuesta.spm",
   "artifactId" : "spm-tools",
   "version" : "1.0.0",
-  "description" : "Herramientas de propuesta --- null",
+  "description" : "Herramientas de propuesta --- spm manager services --- null",
   "username" : "sipaco",
   "machine" : "SIPACO100",
   "state" : "DEVELOPER",
@@ -332,12 +332,27 @@
     "score" : 0
   }, {
     "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-serv/src/main/java/com/propuesta/spm/manager/data/ParamValue.java",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
     "newPath" : "spm-manager/spm-manager-serv/src/main/java/com/propuesta/spm/manager/data/Pedido.java",
     "oldPath" : "/dev/null",
     "score" : 0
   }, {
     "type" : "ADD",
     "newPath" : "spm-manager/spm-manager-serv/src/main/java/com/propuesta/spm/manager/data/Producto.java",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-serv/src/main/java/com/propuesta/spm/manager/filter/PedidoFtr.java",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-serv/src/main/java/com/propuesta/spm/manager/filter/ProductoFtr.java",
     "oldPath" : "/dev/null",
     "score" : 0
   }, {
@@ -412,6 +427,11 @@
     "score" : 0
   }, {
     "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-view/src/main/webapp/part/pedido/filter.html",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
     "newPath" : "spm-manager/spm-manager-view/src/main/webapp/part/pedido/form.html",
     "oldPath" : "/dev/null",
     "score" : 0
@@ -423,6 +443,16 @@
   }, {
     "type" : "ADD",
     "newPath" : "spm-manager/spm-manager-view/src/main/webapp/part/pedido/table.html",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-view/src/main/webapp/part/producto/deta.html",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-view/src/main/webapp/part/producto/filter.html",
     "oldPath" : "/dev/null",
     "score" : 0
   }, {
@@ -467,6 +497,11 @@
     "score" : 0
   }, {
     "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-view/src/main/webapp/view/pedido/info.html",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
     "newPath" : "spm-manager/spm-manager-view/src/main/webapp/view/producto.html",
     "oldPath" : "/dev/null",
     "score" : 0
@@ -488,6 +523,11 @@
   }, {
     "type" : "ADD",
     "newPath" : "spm-manager/spm-manager-view/src/main/webapp/view/producto/inbox.html",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-view/src/main/webapp/view/producto/info.html",
     "oldPath" : "/dev/null",
     "score" : 0
   }, {
@@ -528,6 +568,16 @@
   }, {
     "type" : "ADD",
     "newPath" : "spm-tools/src/main/java/com/propuesta/spm/tools/Config.java",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-tools/src/main/java/com/propuesta/spm/tools/constantes/Fecha.java",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-tools/src/main/java/com/propuesta/spm/tools/mapper/SerializaObjeto.java",
     "oldPath" : "/dev/null",
     "score" : 0
   } ]

@@ -2,6 +2,9 @@
 
 package com.propuesta.spm.manager.local;
 
+import bo.union.comp.filter.MapFilter;
+import bo.union.lang.ServiceException;
+import bo.union.persist.qfilter.QFilter;
 import com.propuesta.spm.model.entity.SpmProducto;
 import com.propuesta.spm.tools.Config;
 import java.util.ArrayList;
@@ -22,6 +25,10 @@ public class ProductoLocal {
 	@PersistenceContext(unitName = Config.UNIT_NAME_MNG)
 	private EntityManager em;
 
+        public List<SpmProducto> listarProducto(MapFilter filter) throws ServiceException {
+		return QFilter.filter(em, SpmProducto.class, filter);
+	}
+        
         public List<SpmProducto> listarProducto (){
             List<SpmProducto> list = new ArrayList<>();
             Query q = em.createQuery("SELECT o FROM SpmProducto o");

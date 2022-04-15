@@ -2,6 +2,7 @@
 package com.propuesta.spm.manager.data;
 
 import java.io.Serializable;
+import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -20,6 +21,8 @@ public class Producto implements Serializable {
     private Long idProducto;
     @XmlElement
     private String nombre;
+    @XmlElement
+    private List<Pedido> listPedido;
 
     public Long getIdProducto() {
         return idProducto;
@@ -35,6 +38,14 @@ public class Producto implements Serializable {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public List<Pedido> getListPedido() {
+        return listPedido;
+    }
+
+    public void setListPedido(List<Pedido> listPedido) {
+        this.listPedido = listPedido;
     }
 
 }

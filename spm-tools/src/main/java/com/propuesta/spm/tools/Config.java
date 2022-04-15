@@ -1,5 +1,4 @@
 
-
 package com.propuesta.spm.tools;
 
 public final class Config {

@@ -2,17 +2,23 @@
 
 __app.controller("spm$pedido", function ($scope, $http) {
     const PATH = "manager/spm";
-    $scope.view = new ViewHandler(PATH, 'pedido', ['inbox','crear', 'editar', 'borrar']);
+    $scope.view = new ViewHandler(PATH, 'pedido', ['inbox', 'crear', 'editar', 'borrar']);
     $scope.part = new PartHandler(PATH, 'pedido');
-    var pedidoServ = new ServHandler(PATH, 'pedido', ['listar', 'crear', 'editar', 'borrar']);
+    var pedidoServ = new ServHandler(PATH, 'pedido', ['listar', 'list/producto', 'crear', 'editar', 'borrar']);
     var pedidoPanel = $scope.panel = new PanelHandler();
     var pedidoData = $scope.data = {
+        filter: {},
         list: [],
-        current: undefined
+        current: undefined,
+        listProducto: [],
+        productoClon: {
+            idProducto: undefined,
+            nombre: undefined
+        }
     };
     var pedidoFilter = $scope.filter = {
         apply: function () {
-            var call = $http.post(pedidoServ.listar, {});
+            var call = $http.post(pedidoServ.filter, pedidoData.filter);
             call.success(function (data) {
                 pedidoData.list = data;
             });
@@ -54,6 +60,13 @@ __app.controller("spm$pedido", function ($scope, $http) {
             pedidoData.current = undefined;
             pedidoPanel.close(name);
         },
+        listProduct: function () {
+            pedidoData.listProducto = [];
+            var call = $http.post(pedidoServ.listProducto, {});
+            call.success(function (data) {
+                pedidoData.listProducto = data;
+            });
+        },
         create: function () {
             var call = $http.post(pedidoServ.crear, pedidoData.current);
             call.success(function () {
@@ -77,6 +90,12 @@ __app.controller("spm$pedido", function ($scope, $http) {
                 pedidoFilter.apply();
                 pedidoPanel.close('borrar');
             });
+        },
+        fnOnremove: function (index, list, test) {
+            return true;
+        },
+        fnOnadd: function (list, item) {
+            return true;
         }
     };
 });

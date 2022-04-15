@@ -1,13 +1,14 @@
 
-
 package com.propuesta.spm.manager;
 
+import bo.union.lang.ServiceException;
 import com.propuesta.spm.manager.data.Producto;
+import com.propuesta.spm.manager.filter.ProductoFtr;
 import java.util.List;
 
 public interface ProductoServ {
 
-	public List<Producto> listarProducto();
+	public List<Producto> listarProducto(ProductoFtr filter) throws ServiceException;
 
 	public void crearProducto(Producto value);
 

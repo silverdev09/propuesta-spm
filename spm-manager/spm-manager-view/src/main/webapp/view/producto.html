@@ -1,5 +1,4 @@
 
-
 <div ng-controller="spm$producto">
     <div ng-include="view.inbox">
         Cargando Inbox
@@ -12,5 +11,8 @@
     </div>
     <div ng-if="panel.if('borrar')" ng-include="view.borrar">
         Cargando Eliminar
+    </div>
+    <div ng-if="panel.if('info')" ng-include="view.info">
+        Cargando detalles
     </div>
 </div>

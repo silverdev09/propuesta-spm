@@ -1,8 +1,11 @@
 
-
+<div click-apply="filter.apply()" click-clear="filter.clear()" config="data.filter.$config" uni-pager="">
+    <div replace="{_pedidoFilter: 'data.filter'}" uni-part="part.filter"></div>
+</div>
 <div uni-action="">
     <button ng-click="action.open('crear')">Crear</button>
     <button ng-click="action.open('editar')" ng-disabled="!table.isOneSelect()">Editar</button>
     <button ng-click="action.open('borrar')" ng-disabled="!table.isOneSelect()">Borrar</button>
+    <button ng-click="action.open('info')" ng-disabled="!table.isOneSelect()">Ver detalles</button>
 </div>
 <div replace="{_pedidoList: 'data.list', _toggle: 'table.toggle', _in: 'table.in'}" uni-part="part.table"></div>

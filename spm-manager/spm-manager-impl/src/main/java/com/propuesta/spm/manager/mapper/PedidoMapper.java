@@ -12,12 +12,14 @@ public final class PedidoMapper {
         to.setIdPedido(from.getIdPedido());
         to.setFecha(from.getFecha());
         to.setDescripcion(from.getDescripcion());
+        to.setListProducto(ProductoMapper.mapperToSpmProductoList(from.getListProducto()));
     }
 
     private static void mapperToPedido(SpmPedido from, Pedido to) {
         to.setIdPedido(from.getIdPedido());
         to.setFecha(from.getFecha());
         to.setDescripcion(from.getDescripcion());
+        to.setListProducto(ProductoMapper.mapperToProductoList(from.getListProducto()));
     }
 
     public static Pedido mapperToPedido(SpmPedido from) {

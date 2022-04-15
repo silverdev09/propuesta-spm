@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<views trace="89a4bb1adae953a168b35be0368da939">
+<views trace="f2e0e5786fb805738ecdb1aa35a4cb39">
     <view id="producto" path="/producto">
         <page>/view/producto.html</page>
         <description>Administrador de productos</description>
         <java>com.propuesta.spm.manager.rest.ProductoRest</java>
         <script src="/ctrl/producto.js">The code: /ctrl/producto.js REQUIRED a comment header</script>
-        <service src="/rest/producto/listar">** The method 'listarProducto()' for @Path('listar') service requires a description **</service>
+        <service src="/rest/producto/filter">** The method 'listarProducto(ProductoFtr)' for @Path('filter') service requires a description **</service>
         <service src="/rest/producto/crear">** The method 'crearProducto(Producto)' for @Path('crear') service requires a description **</service>
         <service src="/rest/producto/editar">** The method 'editarProducto(Producto)' for @Path('editar') service requires a description **</service>
         <service src="/rest/producto/borrar">** The method 'borrarProducto(Producto)' for @Path('borrar') service requires a description **</service>
@@ -15,7 +15,8 @@
         <description>Administrador de pedidos</description>
         <java>com.propuesta.spm.manager.rest.PedidoRest</java>
         <script src="/ctrl/pedido.js">The code: /ctrl/pedido.js REQUIRED a comment header</script>
-        <service src="/rest/pedido/listar">** The method 'listarPedido()' for @Path('listar') service requires a description **</service>
+        <service src="/rest/pedido/filter">** The method 'listarPedido(PedidoFtr)' for @Path('filter') service requires a description **</service>
+        <service src="/rest/pedido/list/producto">** The method 'listarProducto()' for @Path('list/producto') service requires a description **</service>
         <service src="/rest/pedido/crear">** The method 'crearPedido(Pedido)' for @Path('crear') service requires a description **</service>
         <service src="/rest/pedido/editar">** The method 'editarPedido(Pedido)' for @Path('editar') service requires a description **</service>
         <service src="/rest/pedido/borrar">** The method 'borrarPedido(Pedido)' for @Path('borrar') service requires a description **</service>

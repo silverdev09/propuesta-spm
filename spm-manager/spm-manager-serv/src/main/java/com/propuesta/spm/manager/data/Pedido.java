@@ -3,6 +3,7 @@ package com.propuesta.spm.manager.data;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -23,6 +24,8 @@ public class Pedido implements Serializable {
     private String descripcion;
     @XmlElement(type = Date.class)
     private Date fecha;
+    @XmlElement
+    private List<Producto> listProducto;
 
     public Long getIdPedido() {
         return idPedido;
@@ -46,6 +49,14 @@ public class Pedido implements Serializable {
 
     public void setFecha(Date fecha) {
         this.fecha = fecha;
+    }
+
+    public List<Producto> getListProducto() {
+        return listProducto;
+    }
+
+    public void setListProducto(List<Producto> listProducto) {
+        this.listProducto = listProducto;
     }
 
 }

@@ -15,7 +15,7 @@
                 <xm/>
                 <column name="DESCRIPCION" unique="false" nullable="true" insertable="true" updatable="true"/>
             </basic>
-            <many-to-many own="true" collection-type="java.util.List" cit="java.util.ArrayList" connected-entity-id="_16499093126486" v="true" xvt="" name="spmProductos" id="_164990947137914">
+            <many-to-many own="true" collection-type="java.util.List" cit="java.util.ArrayList" connected-entity-id="_16499093126486" connected-attribute-id="_16500519671038" v="true" xvt="" name="listProducto" id="_16500519671017">
                 <xwm/>
                 <xm/>
                 <join-table name="SPM_ORDEN">
@@ -42,6 +42,10 @@
                 <xm/>
                 <column name="NOMBRE" unique="false" nullable="true" insertable="true" updatable="true"/>
             </basic>
+            <many-to-many collection-type="java.util.List" cit="java.util.ArrayList" connected-entity-id="_16499092252613" connected-attribute-id="_16500519671017" v="true" xvt="" name="listPedido" id="_16500519671038">
+                <xwm/>
+                <xm/>
+            </many-to-many>
             <id attribute-type="Long" v="true" xvt="" name="idProducto" id="_16499093126497">
                 <xwm/>
                 <xm/>
@@ -65,8 +69,8 @@
     </c>
     <wsl>
         <ws n="Main" id="_16499091814822">
-            <i ref="_16499093126486" x="195" y="125"/>
-            <i ref="_16499092252613" x="489" y="125"/>
+            <i ref="_16499093126486" x="193" y="123"/>
+            <i ref="_16499092252613" x="487" y="123"/>
         </ws>
     </wsl>
 </entity-mappings>

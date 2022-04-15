@@ -1,0 +1,13 @@
+
+<div uni-panel="{type:'modal', size:'md', level:'success'}">
+    <header i18n="edit,producto">
+        Modificar producto
+    </header>
+    <form name="formEdit" uni-validator="">
+        <div replace="{_productoItem: 'data.current'}" uni-part="part.form"></div>
+    </form>
+    <footer>
+        <a ng-click="action.cancel('update')" uni-badge="" uni-confirm="cancel">Cancelar</a>
+        <button ng-click="formEdit.$validate() && action.update()" uni-badge="" uni-confirm="update">Actualizar</button>
+    </footer>
+</div>

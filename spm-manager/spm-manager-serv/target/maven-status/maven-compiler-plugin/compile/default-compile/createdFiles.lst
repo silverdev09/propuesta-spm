@@ -1,0 +1,4 @@
+com\propuesta\spm\manager\PedidoServ.class
+com\propuesta\spm\manager\ProductoServ.class
+com\propuesta\spm\manager\data\Pedido.class
+com\propuesta\spm\manager\data\Producto.class

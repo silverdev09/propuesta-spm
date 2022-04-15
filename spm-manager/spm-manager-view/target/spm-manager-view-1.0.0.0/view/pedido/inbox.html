@@ -1,0 +1,8 @@
+
+
+<div uni-action="">
+    <button ng-click="action.open('crear')">Crear</button>
+    <button ng-click="action.open('editar')" ng-disabled="!table.isOneSelect()">Editar</button>
+    <button ng-click="action.open('borrar')" ng-disabled="!table.isOneSelect()">Borrar</button>
+</div>
+<div replace="{_pedidoList: 'data.list', _toggle: 'table.toggle', _in: 'table.in'}" uni-part="part.table"></div>

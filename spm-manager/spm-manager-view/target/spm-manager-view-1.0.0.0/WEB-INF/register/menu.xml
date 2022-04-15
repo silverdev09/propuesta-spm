@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<menu trace="4d533532fe21af8da3d2eac5087fb6b1">
+    <label>Administrador ordenes</label>
+    <description>administrador</description>
+    <item id="1" type="LINK" mode="CONTENT">
+        <label>Productos</label>
+        <description>**productos **</description>
+        <target type="VIEW">producto</target>
+    </item>
+    <item id="2" type="LINK" mode="CONTENT">
+        <label>Pedidos</label>
+        <description>** Pedidos **</description>
+        <target type="VIEW">pedido</target>
+    </item>
+</menu>

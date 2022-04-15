@@ -1,0 +1,534 @@
+{
+  "groupId" : "com.propuesta.spm",
+  "artifactId" : "spm-manager-view",
+  "version" : "1.0.0.0",
+  "description" : "spm manager views --- spm manager implements service --- spm manager local implements --- spm manager services --- Proyecto que contiene todas las entidades de proyecto --- Herramientas de propuesta --- null",
+  "username" : "sipaco",
+  "machine" : "SIPACO100",
+  "state" : "DEVELOPER",
+  "context" : null,
+  "local" : {
+    "hash" : "3d4bcf87f1da029d7191b97068f1bd621c0fd865",
+    "name" : "refs/heads/sipaco/1.0.x",
+    "source" : "D:\\CORE\\work\\CORE-12\\propuesta-spm\\spm-manager\\spm-manager-view",
+    "empty" : false
+  },
+  "remote" : {
+    "hash" : "3d4bcf87f1da029d7191b97068f1bd621c0fd865",
+    "name" : "refs/heads/sipaco/1.0.x",
+    "source" : "http://scm.internal.union:8080/scm/git/baking-reporting",
+    "empty" : false
+  },
+  "commitNotPush" : [ ],
+  "changeInBuild" : [ {
+    "type" : "MODIFY",
+    "newPath" : "pom.xml",
+    "oldPath" : "pom.xml",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-module/pom.xml",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-module/reporting-module-impl/pom.xml",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-module/reporting-module-impl/src/main/java/bo/union/banking/reporting/module/impl/HubCommissionImpl.java",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-module/reporting-module-impl/src/main/java/bo/union/banking/reporting/module/impl/HubConciliationImpl.java",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-module/reporting-module-impl/src/main/java/bo/union/banking/reporting/module/impl/HubInvoicingImpl.java",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-module/reporting-module-impl/src/main/java/bo/union/banking/reporting/module/mapper/CommissionMapper.java",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-module/reporting-module-impl/src/main/java/bo/union/banking/reporting/module/mapper/ConciliationMapper.java",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-module/reporting-module-impl/src/main/java/bo/union/banking/reporting/module/mapper/InvoicingMapper.java",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-module/reporting-module-impl/src/main/resources/META-INF/MANIFEST.MF",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-module/reporting-module-impl/src/main/resources/META-INF/ejb-jar.xml",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-module/reporting-module-impl/src/main/resources/META-INF/jboss.xml",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-module/reporting-module-local/pom.xml",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-module/reporting-module-local/src/main/java/bo/union/baking/reporting/module/local/MovementLocal.java",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-module/reporting-module-serv/pom.xml",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-module/reporting-module-serv/src/main/java/bo/union/baking/reporting/module/data/CommissionFilter.java",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-module/reporting-module-serv/src/main/java/bo/union/baking/reporting/module/data/CommissionReport.java",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-module/reporting-module-serv/src/main/java/bo/union/baking/reporting/module/data/ConciliationFilter.java",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-module/reporting-module-serv/src/main/java/bo/union/baking/reporting/module/data/ConciliationReport.java",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-module/reporting-module-serv/src/main/java/bo/union/baking/reporting/module/data/Filter.java",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-module/reporting-module-serv/src/main/java/bo/union/baking/reporting/module/data/InvoicingFilter.java",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-module/reporting-module-serv/src/main/java/bo/union/baking/reporting/module/data/InvoicingReport.java",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-module/reporting-module-serv/src/main/java/bo/union/baking/reporting/module/data/Report.java",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-module/reporting-module-serv/src/main/java/bo/union/baking/reporting/module/serv/HubCommissionServ.java",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-module/reporting-module-serv/src/main/java/bo/union/baking/reporting/module/serv/HubConciliationServ.java",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-module/reporting-module-serv/src/main/java/bo/union/baking/reporting/module/serv/HubInvoicingServ.java",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-module/reporting-module-view/pom.xml",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-module/reporting-module-view/src/main/java/bo/union/banking/reporting/module/view/GatewayRest.java",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-module/reporting-module-view/src/main/java/bo/union/banking/reporting/module/view/RestConfig.java",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-module/reporting-module-view/src/main/webapp/WEB-INF/ejb-jar.xml",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-module/reporting-module-view/src/main/webapp/WEB-INF/jboss-deployment-structure.xml",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-module/reporting-module-view/src/main/webapp/WEB-INF/jboss-web.xml",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-module/reporting-module-view/src/main/webapp/WEB-INF/register/menu.xml",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-module/reporting-module-view/src/main/webapp/WEB-INF/register/module.xml",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-module/reporting-module-view/src/main/webapp/WEB-INF/register/views.xml",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-module/reporting-module-view/src/main/webapp/WEB-INF/web.xml",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-module/reporting-module-view/src/main/webapp/ctrl/conciliacionDiaria.js",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-module/reporting-module-view/src/main/webapp/ctrl/distribucionComisiones.js",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-module/reporting-module-view/src/main/webapp/ctrl/facturacionMensual.js",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-module/reporting-module-view/src/main/webapp/ctrl/service.js",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-module/reporting-module-view/src/main/webapp/ctrl/serviceLocal.js",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-module/reporting-module-view/src/main/webapp/ctrl/utilidades.js",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-module/reporting-module-view/src/main/webapp/view/conciliacionDiaria.html",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-module/reporting-module-view/src/main/webapp/view/distribucionComisiones.html",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-module/reporting-module-view/src/main/webapp/view/facturacionMensual.html",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-module/reporting-module-view/src/main/webapp/view/service.html",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-module/reporting-module-view/src/main/webapp/view/serviceLocal.html",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-tool/pom.xml",
+    "score" : 0
+  }, {
+    "type" : "DELETE",
+    "newPath" : "/dev/null",
+    "oldPath" : "reporting-tool/src/main/java/bo/union/banking/reporting/reporting/tool/Config.java",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/pom.xml",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-impl/pom.xml",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-impl/src/main/java/com/propuesta/spm/manager/PedidoImpl.java",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-impl/src/main/java/com/propuesta/spm/manager/ProductoImpl.java",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-impl/src/main/java/com/propuesta/spm/manager/mapper/PedidoMapper.java",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-impl/src/main/java/com/propuesta/spm/manager/mapper/ProductoMapper.java",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-impl/src/main/resources/META-INF/ejb-jar.xml",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-local/pom.xml",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-local/src/main/java/com/propuesta/spm/manager/local/PedidoLocal.java",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-local/src/main/java/com/propuesta/spm/manager/local/ProductoLocal.java",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-serv/pom.xml",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-serv/src/main/java/com/propuesta/spm/manager/PedidoServ.java",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-serv/src/main/java/com/propuesta/spm/manager/ProductoServ.java",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-serv/src/main/java/com/propuesta/spm/manager/data/Pedido.java",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-serv/src/main/java/com/propuesta/spm/manager/data/Producto.java",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-view/pom.xml",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-view/src/main/java/com/propuesta/spm/manager/RestConfig.java",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-view/src/main/java/com/propuesta/spm/manager/rest/PedidoRest.java",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-view/src/main/java/com/propuesta/spm/manager/rest/ProductoRest.java",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-view/src/main/java/com/propuesta/spm/manager/rest/package-info.java",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-view/src/main/webapp/WEB-INF/ejb-jar.xml",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-view/src/main/webapp/WEB-INF/jboss-deployment-structure.xml",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-view/src/main/webapp/WEB-INF/jboss-web.xml",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-view/src/main/webapp/WEB-INF/register/menu.xml",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-view/src/main/webapp/WEB-INF/register/module.xml",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-view/src/main/webapp/WEB-INF/register/views.xml",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-view/src/main/webapp/WEB-INF/web.xml",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-view/src/main/webapp/ctrl/pedido.js",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-view/src/main/webapp/ctrl/producto.js",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-view/src/main/webapp/part/pedido/form.html",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-view/src/main/webapp/part/pedido/info.html",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-view/src/main/webapp/part/pedido/table.html",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-view/src/main/webapp/part/producto/form.html",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-view/src/main/webapp/part/producto/info.html",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-view/src/main/webapp/part/producto/table.html",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-view/src/main/webapp/view/pedido.html",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-view/src/main/webapp/view/pedido/borrar.html",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-view/src/main/webapp/view/pedido/crear.html",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-view/src/main/webapp/view/pedido/editar.html",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-view/src/main/webapp/view/pedido/inbox.html",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-view/src/main/webapp/view/producto.html",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-view/src/main/webapp/view/producto/borrar.html",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-view/src/main/webapp/view/producto/crear.html",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-view/src/main/webapp/view/producto/editar.html",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-manager/spm-manager-view/src/main/webapp/view/producto/inbox.html",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-model/pom.xml",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-model/src/main/java/com/propuesta/spm/model/design/Querys DDL.sql",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-model/src/main/java/com/propuesta/spm/model/design/design.jpa",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-model/src/main/java/com/propuesta/spm/model/entity/SpmPedido.java",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-model/src/main/java/com/propuesta/spm/model/entity/SpmProducto.java",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-model/src/main/resources/META-INF/persistence.xml",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-tools/pom.xml",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  }, {
+    "type" : "ADD",
+    "newPath" : "spm-tools/src/main/java/com/propuesta/spm/tools/Config.java",
+    "oldPath" : "/dev/null",
+    "score" : 0
+  } ]
+}

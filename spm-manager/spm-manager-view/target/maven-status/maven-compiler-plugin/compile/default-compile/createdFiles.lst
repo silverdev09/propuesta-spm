@@ -1,0 +1,3 @@
+com\propuesta\spm\manager\rest\PedidoRest.class
+com\propuesta\spm\manager\rest\ProductoRest.class
+com\propuesta\spm\manager\RestConfig.class

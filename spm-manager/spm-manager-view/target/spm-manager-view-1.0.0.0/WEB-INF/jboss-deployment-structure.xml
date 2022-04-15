@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-deployment-structure xmlns="urn:jboss:deployment-structure:1.3">
+  <deployment>
+    <dependencies>
+      <module services="import" name="bo.union.register"/>
+      <module services="import" name="bo.union.framework"/>
+      <module services="import" name="bo.union.platform"/>
+    </dependencies>
+  </deployment>
+</jboss-deployment-structure>

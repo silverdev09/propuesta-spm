@@ -1,0 +1,4 @@
+com\propuesta\spm\manager\mapper\PedidoMapper.class
+com\propuesta\spm\manager\mapper\ProductoMapper.class
+com\propuesta\spm\manager\PedidoImpl.class
+com\propuesta\spm\manager\ProductoImpl.class

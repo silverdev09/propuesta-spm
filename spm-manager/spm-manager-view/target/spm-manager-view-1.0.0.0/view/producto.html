@@ -1,0 +1,16 @@
+
+
+<div ng-controller="spm$producto">
+    <div ng-include="view.inbox">
+        Cargando Inbox
+    </div>
+    <div ng-if="panel.if('crear')" ng-include="view.crear">
+        Cargando Crear
+    </div>
+    <div ng-if="panel.if('editar')" ng-include="view.editar">
+        Cargando Actualizar
+    </div>
+    <div ng-if="panel.if('borrar')" ng-include="view.borrar">
+        Cargando Eliminar
+    </div>
+</div>

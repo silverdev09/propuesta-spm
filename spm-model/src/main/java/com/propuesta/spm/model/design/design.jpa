@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<entity-mappings ptype="MONOLITH" ppkg="com.propuesta.spm.model.entity" epkg="domain" v="5.4.2" rws="_16499091814822" Pws="_16499091814822" cws="_16499091814822" persistenceUnitName="DEFAULT_PU" sm="false" xs="false" id="_16499091814811" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <entity cacheable="false" compositePrimaryKeyClass="SpmPedidoPK" abs="false" class="SpmPedido" v="true" jbn="false" xre="false" m="false" rootElement="_16499091814811" id="_16499092252613">
+        <inf e="true" n="java.io.Serializable"/>
+        <ath>sipaco</ath>
+        <attributes>
+            <basic attribute-type="java.util.Date" v="true" xvt="" name="fecha" id="_164990940819710">
+                <xwm/>
+                <xm/>
+                <temporal>DATE</temporal>
+                <column name="FECHA" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </basic>
+            <basic attribute-type="String" v="true" xvt="" name="descripcion" id="_164990940839711">
+                <xwm/>
+                <xm/>
+                <column name="DESCRIPCION" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </basic>
+            <many-to-many own="true" collection-type="java.util.List" cit="java.util.ArrayList" connected-entity-id="_16499093126486" v="true" xvt="" name="spmProductos" id="_164990947137914">
+                <xwm/>
+                <xm/>
+                <join-table name="SPM_ORDEN">
+                    <join-column name="ID_PEDIDO" rc="" unique="false" nullable="true" insertable="true" updatable="true" column-definition="" table=""/>
+                    <inverse-join-column name="ID_PRODUCTO" rc="" unique="false" nullable="true" insertable="true" updatable="true" column-definition="" table=""/>
+                </join-table>
+            </many-to-many>
+            <id attribute-type="Long" v="true" xvt="" name="idPedido" id="_16499092253894">
+                <xwm/>
+                <xm/>
+                <column name="ID_PEDIDO" unique="false" nullable="true" insertable="true" updatable="true"/>
+                <generated-value strategy="SEQUENCE" generator="SPM_SEQ_PEDIDO"/>
+                <sequence-generator name="SPM_SEQ_PEDIDO" sequence-name="SPM_SEQ_PEDIDO" catalog="" schema="" initial-value="1" allocation-size="1"/>
+            </id>
+        </attributes>
+        <table name="SPM_PEDIDO"/>
+    </entity>
+    <entity cacheable="false" compositePrimaryKeyClass="SpmProductoPK" abs="false" class="SpmProducto" v="true" jbn="false" xre="false" m="false" rootElement="_16499091814811" id="_16499093126486">
+        <inf e="true" n="java.io.Serializable"/>
+        <ath>sipaco</ath>
+        <attributes>
+            <basic attribute-type="String" v="true" xvt="" name="nombre" id="_16499093815039">
+                <xwm/>
+                <xm/>
+                <column name="NOMBRE" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </basic>
+            <id attribute-type="Long" v="true" xvt="" name="idProducto" id="_16499093126497">
+                <xwm/>
+                <xm/>
+                <column name="ID_PRODUCTO" unique="false" nullable="true" insertable="true" updatable="true"/>
+                <generated-value strategy="SEQUENCE" generator="SPM_SEQ_PRODUCTO"/>
+                <sequence-generator name="SPM_SEQ_PRODUCTO" sequence-name="SPM_SEQ_PRODUCTO" catalog="" schema="" initial-value="1" allocation-size="1"/>
+            </id>
+        </attributes>
+        <table name="SPM_PRODUCTO"/>
+    </entity>
+    <c>
+        <ct>java.util.List</ct>
+        <ct>java.util.Set</ct>
+        <ct>java.util.Map</ct>
+        <ct>java.util.Collection</ct>
+        <cit>java.util.ArrayList</cit>
+        <cit>java.util.LinkedList</cit>
+        <cit>java.util.HashSet</cit>
+        <cit>java.util.TreeSet</cit>
+        <cit>java.util.HashMap</cit>
+    </c>
+    <wsl>
+        <ws n="Main" id="_16499091814822">
+            <i ref="_16499093126486" x="195" y="125"/>
+            <i ref="_16499092252613" x="489" y="125"/>
+        </ws>
+    </wsl>
+</entity-mappings>

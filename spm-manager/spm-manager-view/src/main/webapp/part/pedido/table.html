@@ -1,0 +1,16 @@
+<table uni-table="{select: '_toggle', selected: '_in'}">
+    <thead>
+        <tr>
+            <th i18n="pedido" width="5%">ID Pedido</th>
+            <th i18n="fecha">Fecha</th>
+            <th i18n="desc">Descripcion</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="row in _pedidoList">
+            <td>{{row.idPedido}}</td>
+            <td>{{row.fecha|date:'dd/MM/yyyy'}}</td>
+            <td>{{row.descripcion}}</td>
+        </tr>
+    </tbody>
+</table>

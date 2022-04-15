@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<module id="6b48ac7db092faca3ac6875b64cc057a" trace="d2b2b1d7d5a9f289962e17c1500941e3">
+    <name>spm-manager-view</name>
+    <module>SPM</module>
+    <version>1.0.0.0</version>
+    <artifact>com.propuesta.spm:spm-manager-view</artifact>
+    <mode>RELEASE</mode>
+    <package>war</package>
+    <subtype>MANAGER</subtype>
+    <description>spm manager views</description>
+    <context-path>/manager/spm</context-path>
+    <context-name>spm-manager</context-name>
+    <traces>
+        <item name="views.xml">89a4bb1adae953a168b35be0368da939</item>
+        <item name="menu.xml">4d533532fe21af8da3d2eac5087fb6b1</item>
+    </traces>
+</module>

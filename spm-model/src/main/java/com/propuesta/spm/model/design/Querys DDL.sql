@@ -31,12 +31,12 @@ ALTER TABLE SPM_ORDEN ADD CONSTRAINT FK_SPM_ORDEN_ID_PEDIDO FOREIGN KEY (ID_PEDI
 
 ALTER TABLE SPM_ORDEN ADD CONSTRAINT FK_SPM_ORDEN_ID_PRODUCTO FOREIGN KEY (ID_PRODUCTO) REFERENCES SPM_PRODUCTO (ID_PRODUCTO);
 
----------------------------------------------------------------- GRANTS SEQUENCES RUN
+---------------------------------------------------------------- GRANTS SEQUENCES 
 GRANT SELECT ON SPM_SEQ_PEDIDO TO AUT;
 
 GRANT SELECT ON SPM_SEQ_PRODUCTO TO AUT;
 
----------------------------------------------------------------- GRANTS TABLES MNG
+---------------------------------------------------------------- GRANTS TABLES 
 GRANT SELECT, INSERT, UPDATE, DELETE ON SPM_PRODUCTO TO AUT;
 
 GRANT SELECT, INSERT, UPDATE, DELETE ON SPM_ORDEN TO AUT;
